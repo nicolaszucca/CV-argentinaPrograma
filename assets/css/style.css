@@ -1,0 +1,415 @@
+/* 330px*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(28, 28, 28)
+}
+
+.navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar .container li {
+    margin: 20px 10px;
+}
+
+.navbar .container li a {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    /* color: #2c5a83; */
+    color: #fff;
+    text-decoration: none;
+
+    transition: all ease .6s;
+}
+
+.navbar .container li a:hover {
+    color: #3378b5;
+}
+
+
+/* 
+
+Hero section
+
+*/
+
+.hero-presentation {
+    height: 90vh;
+}
+
+.hero-presentation .container img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin: 1.3rem 0;
+}
+
+
+.hero-presentation .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hero-presentation .container h1 {
+    font-size: 7vw;
+}
+
+.hero-presentation .container .hero-description {
+    font-size: 15px;
+    line-height: 15px;
+    margin: 15px 15px 0px 15px;
+    padding: 25px;
+}
+
+.media {
+    font-size: 25px;
+    font-weight: 600;
+    align-self: flex-start;
+    margin: 15px;
+    padding: 25px;
+}
+
+.media i {
+    font-size: 25px;
+    color: #3356b5;
+    margin: 0px 15px;
+    cursor: pointer;
+
+    transition: all .5s ease-in;
+}
+
+
+.media i:hover {
+    transform: scale(1.1);
+    color: rgb(28, 28, 28);
+}
+
+
+/*
+
+Skills section
+
+*/
+
+.skills-experience {
+    /* height: 90vh; */
+    color: #fff;
+    background-color: rgb(28, 28, 28);
+}
+
+.skills-experience .container {
+    /* height: 100%; */
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.skills-experience .container p {
+    display: none;
+}
+
+.skills-experience h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+
+.card-container {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-container .card {
+    width: 80%;
+    height: 4rem;
+    margin: 10px 0px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    padding: 25px;
+
+    cursor: pointer;
+
+    transition: transform 1s ease;
+}
+
+.card-container .card:hover {
+    transform: scale(1.1);
+}
+
+
+/* html */
+.card-container .card:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('../imgs/html.png');
+
+}
+
+/* css */
+.card-container .card:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('../imgs/css.jpg');
+
+}
+
+/* javascript */
+.card-container .card:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('../imgs/javascript.png');
+
+}
+
+/* 
+
+Personalization section
+
+*/
+
+.personalization {
+    text-align: center;
+}
+
+.personalization .personalization-container {
+    width: auto;
+    margin: 0 auto;
+}
+
+.personalization-container h2 {
+    margin: 20px 0px;
+}
+
+.form-contact-container .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    width: 80%;
+}
+
+.form-contact-container .container input {
+    border-radius: 10px;
+    background-color: #cccccc;
+    width: 90%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-indent: 10px;
+}
+
+.button {
+    color: #cccccc;
+
+}
+
+#button-send-form,
+#resetForm {
+    cursor: pointer;
+    background-color: #cccccc;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 5px 20px;
+}
+
+
+
+
+
+
+/* 
+
+Contact section
+
+*/
+
+.contact {
+    text-align: center;
+    background-color: rgb(28, 28, 28);
+    color: #fff;
+}
+
+.contact .container {
+    width: auto;
+    margin: 0 auto;
+}
+
+.contact .container h2 {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.contactOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactOptions .whatsappLink {
+    display: inherit;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3378b5;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+    transition: transform 1s ease;
+}
+
+.contactOptions a:hover {
+    transform: scale(1.1);
+}
+
+.container-email i {
+    margin: 10px 10px;
+    padding: 15px 10px 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* 
+
+footer section
+
+*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(40, 40, 40);
+}
+
+.footer i {
+    cursor: pointer;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 25px;
+    height: 35px;
+    width: 35px;
+    background-color: #3356b5;
+    border-radius: 50px;
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: color 1s ease;
+}
+
+.up:hover {
+    color: rgb(28, 28, 28);
+}
+
+@media (min-width: 420px) {
+
+    .navbar .container,
+    .hero-presentation .container,
+    .skills-experience .container,
+    .personalization .personalization-container,
+    .contact .container {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .hero-presentation .container .hero-description {
+        line-height: 20px;
+        font-size: 18px;
+
+    }
+
+    .media {
+        align-self: center;
+        margin: 100px 15px 100px 15px;
+    }
+
+    .media i:hover {
+        transform: scale(1.3);
+    }
+
+    .up {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .hero-presentation .container h1 {
+        font-size: 70px;
+    }
+
+    .skills-experience .container p {
+        display: block;
+    }
+
+    .card-container .card {
+        width: 85%;
+        height: 6rem;
+        padding: 20px;
+    }
+
+    .contactOptions {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact .container {
+        padding: 100px 0px 200px 0px;
+    }
+
+    .contact .container h2 {
+        margin-bottom: 100px;
+    }
+}

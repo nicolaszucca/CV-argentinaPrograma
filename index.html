@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e6989afcf9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/imgs/curriculum-icon.png" type="image/x-icon">
+
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Curriculum" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.example.com" />
+    <meta property="og:image" content=" http://example.com/image.jpg" />
+    <meta property="og:description" content="Descripcion" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Curriculum</title>
+</head>
+
+<body>
+    <!-- boton para ir hacia arriba -->
+    <div class="up">
+        <i class="fa-solid fa-up-long"></i>
+    </div>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <ul class="container">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#header">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#presentation">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#skills">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- principal de la pagina -> presentacion -->
+    <section class="hero-presentation" id="presentation">
+        <article class="container">
+            <img class="profile-image-user" src="" alt="La imagen de perfil no puede ser visualizada">
+            <h1>Hola, soy <span class="person-name" style="color: #3378b5;"></span></h1>
+            <p class="hero-description"> Me dedico al desarrollo front-end desde <span class="person-country"></span>.
+                Llevo desarrollando distintos tipos de aplicaciones, y actualmente me encuentro estuadiando desarrollo
+                mobile.
+                Soy una persona muy apasionada por la tecnología. Me gusta prestar atencion a los
+                detalles.
+                Creo que los detalles marcan la diferencia en un trabajo que deje satisfecho al cliente!
+            </p>
+
+            <div class="media"> > <i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-github"></i><i
+                    class="fa-brands fa-instagram"></i></div>
+        </article>
+    </section>
+
+    <!-- seccion de habilidades -->
+    <section class="skills-experience" id="skills">
+        <article class="container">
+            <h2>Experiencia y habilidades</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi magni voluptates,
+                        debitis,
+                        consectetur illo incidunt laudantium a quo, rem doloremque. Sequi odio, error nobis saepe
+                        officiis</p>
+                    <!-- TODO: ICONS -->
+
+                </div>
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi magni voluptates,
+                        debitis,
+                        consectetur illo incidunt laudantium a quo, rem doloremque. Sequi odio, error nobis saepe
+                        officiis</p>
+                    <!-- TODO: ICONS -->
+
+                </div>
+                <div class="card">
+                    <h3>JAVASCRIPT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi magni voluptates,
+                        debitis,
+                        consectetur illo incidunt laudantium a quo, rem doloremque. Sequi odio, error nobis saepe
+                        officiis</p>
+                    <!-- TODO: ICONS -->
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- seccion para poder personalizar la propia pagina con los datos que quiera ingresar el usuario -->
+    <section id="personalization" class="personalization">
+        <article class="personalization-container">
+            <h2>Personalice este sitio!</h2>
+            <div class="form-contact-container">
+                <form id="form" class="container" action="" method="POST">
+                    <div class="inputs">
+                        <input type="text" id="name" name="name" placeholder="Nombre..." required>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" id="surname" name="surname" placeholder="Apellido..." required>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="email" id="email" name="email" placeholder="Email..." required>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="number" id="phone" name="phone" placeholder="541123456789..." required>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" id="country" name="country" placeholder="Pais..." required>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="file" accept="image/*" id="input-img" name="img">
+                    </div>
+
+                    <div class="button">
+                        <button id="button-send-form" type="submit">Enviar</button>
+                        <button id="resetForm" type="submit">Reiniciar</button>
+                    </div>
+
+                </form>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- seccion de contacto -->
+    <section class="contact" id="contact">
+        <article class="container">
+
+            <h2>Estemos en contacto</h2>
+
+            <div class="contactOptions">
+
+                <a class="whatsappLink" target="_blank" href="https://api.whatsapp.com/send?phone=">
+                    <i class="fa-brands fa-whatsapp"></i>&nbspHablemos!</a>
+
+                <div class="container-email">
+                    <h4>Email</h4>
+                    <p class="email"></p>
+
+                    <a id="btn-send"><i class="fa-regular fa-paper-plane"></i></a> <i id="btn-copy"
+                        class="fa-solid fa-copy"></i>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div>Copyright © <span class="footer-person-name"></span> · 2023</div>
+        <div class="footer-media">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
